@@ -8,10 +8,17 @@ v1.1: Minor formatting and phrasing adjustments
 	-Added in a missing parentheses (after the Swish link)
 	-Altered the Swish link to use their weather URL instead of the general game/linup one 
 	-Added in point 3, with info about what an italicized matchup means (for double-headers)
+
+v1.2: Minor formatting and phrasing adjustments 
+  **Changes:**
+	-Updated season data to use 2021 endpoint
+	-Updated the FiveThirtyEight description with an additional link and information
+	-Additional minor text adjustments within the footnotes
+
 	
   **Backlog:**
-	-Set up date parser to auto-select the entered date as the Swish link, for higher accuracy
-	-Figure out how to actually italicize matchups that are double headers, and potentially place them right underneath game 1
+	-Build in weather POC into primary script
+	-Figure out how to actually italicize matchups that are double headers, and place them right underneath game 1
 	-Pull in weather data at the end of the program
 	-Auto-pull in winning percentages from https://github.com/fivethirtyeight/data/tree/master/mlb-elo ; could potentially use https://www.twilio.com/blog/2016/08/fivethirtyeight-data-in-python.html for a method
 	
