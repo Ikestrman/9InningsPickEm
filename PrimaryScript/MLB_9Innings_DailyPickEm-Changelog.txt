@@ -1,6 +1,5 @@
 v1.0: Initial script
 
-
 v1.1: Minor formatting and phrasing adjustments 
   **Changes:**
 	-Removed the extra words from the last sentence ("the last couple days")
@@ -14,11 +13,31 @@ v1.2: Minor formatting and phrasing adjustments
 	-Updated season data to use 2021 endpoint
 	-Updated the FiveThirtyEight description with an additional link and information
 	-Additional minor text adjustments within the footnotes
-
 	
   **Backlog:**
 	-Build in weather POC into primary script
 	-Figure out how to actually italicize matchups that are double headers, and place them right underneath game 1
-	-Pull in weather data at the end of the program
 	-Auto-pull in winning percentages from https://github.com/fivethirtyeight/data/tree/master/mlb-elo ; could potentially use https://www.twilio.com/blog/2016/08/fivethirtyeight-data-in-python.html for a method
 	
+v1.3: Added FiveThirtyEight Percentages
+  **Changes:**
+	-Winning percentages now populated from FiveThirtyEight instead of the statsapi (via pandas dataframe)
+	-Additional minor adjustments
+	
+  **Backlog:**
+	-Build in weather POC into primary script
+	-Figure out how to actually italicize matchups that are double headers
+
+  **Bugs:**
+	-Program fails to run if a double-header is occurring that day
+
+v1.4: Resolved double-header bug and improved FiveThirtyEight percentage functions
+  **Changes:**
+	-Functions added to check if a team is scheduled for a double header, using their first/second game's win probabilities appropriately
+	-Slimmed down the print statements and made additional minor cleanup adjustments
+	
+  **Backlog:**
+	-Build in weather POC into primary script
+	-Figure out how to actually italicize matchups that are double headers
+	-Build in better error handling
+	-Automate list of matches with the widest margins (for poll questions)
