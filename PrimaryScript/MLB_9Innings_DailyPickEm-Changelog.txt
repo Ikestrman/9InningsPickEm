@@ -41,3 +41,13 @@ v1.4: Resolved double-header bug and improved FiveThirtyEight percentage functio
 	-Figure out how to actually italicize matchups that are double headers
 	-Build in better error handling
 	-Automate list of matches with the widest margins (for poll questions)
+
+v1.5: Added in automated poll options
+  **Changes:**
+	-Collates heaviest 538 favorites (by percentage), then prints of the top 10 most favorited matchups
+	-Slimmed down the replacer formatting and made additional minor text adjustments
+	
+  **Backlog:**
+	-Build in weather POC into primary script
+	-Figure out how to actually italicize matchups that are double headers
+	-Build in better error handling
