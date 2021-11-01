@@ -51,3 +51,14 @@ v1.5: Added in automated poll options
 	-Build in weather POC into primary script
 	-Figure out how to actually italicize matchups that are double headers
 	-Build in better error handling
+
+v2.0: Major refactor: Script now processed as a function within a Flask App, hosted on Heroku
+  **Changes:**
+	-Major refactor completed (2.x), migrating the app from CLI-use-only (v1.x) to a version that can be used by anyone with access to a web browser, at pickemscriptapp.herokuapp.com
+	-Associated formatting changes to reflect move to text displaying in HTML (instead of in a terminal) adjusted accordingly
+	-New major feature: 'Weather Report' section that checks all eligble stadiums (i.e., would be impacted by rain) for an openweather PoP percentage >35% over the ~3 hours of a matchup.
+	-All (known) bugs resulting in catastrophic failures of the script when endpoints returned null or empty values now resolved, letting the script either continue or terminate gracefully (depending on what info still needs to be displayed); includes past-day crash, no-games crash, postponed-game crash, etc.
+	
+  **Backlog:**
+	-Add single asteriks for matchups that are double headers [trivial priority]
+	-Add double asteriks for matchups potentially affected by weather [trivial priority]
